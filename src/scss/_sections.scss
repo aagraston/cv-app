@@ -1,3 +1,29 @@
 body {
   background-color: $color-black;
 }
+
+.primary-div {
+  max-width: 45%;
+  margin: auto;
+  display: block;
+
+  padding: 30px;
+  background-color: rgba($color: $color-white, $alpha: 0.86);
+  border-radius: 5px 5px 5px 5px;
+}
+.content-container-div {
+  border-radius: 5px 5px 5px 5px;
+}
+.form-section {
+  margin-bottom: 30px;
+  background-color: $color-white;
+}
+.form-header {
+  background-color: $color-blue;
+  padding: 30px;
+
+  border-radius: 5px 5px 0px 0px;
+}
+.form-input-body {
+  padding: 30px;
+}
