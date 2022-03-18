@@ -20,6 +20,7 @@ class App extends Component {
   render() {
     const { edit } = this.state
 
+    //return how the page should look in edit mode
     if (edit) {
       return (
         <div>
@@ -29,6 +30,7 @@ class App extends Component {
           </form>
         </div>
       )
+      //return how the page should look once submitted
     } else {
       return <div>Currently submitted</div>
     }
