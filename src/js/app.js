@@ -3,13 +3,19 @@ import React, { Component } from 'react'
 class App extends Component {
   constructor() {
     super()
-    this.state = {}
+    this.state = {
+      edit: true,
+    }
   }
 
   render() {
-    const { stateObjects } = this.state
+    const { edit } = this.state
 
-    return <div>hey peoples</div>
+    if (edit) {
+      return <div>Currently in edit mode</div>
+    } else {
+      return <div>Currently submitted</div>
+    }
   }
 }
 
