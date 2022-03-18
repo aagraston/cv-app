@@ -3,26 +3,33 @@ body {
 }
 
 .primary-div {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
   max-width: 45%;
   margin: auto;
   display: block;
 
   padding: 30px;
   background-color: rgba($color: $color-white, $alpha: 0.86);
-  border-radius: 5px 5px 5px 5px;
+  border-radius: $border-radi $border-radi $border-radi $border-radi;
 }
 .content-container-div {
-  border-radius: 5px 5px 5px 5px;
+  border-radius: $border-radi $border-radi $border-radi $border-radi;
 }
 .form-section {
   margin-bottom: 30px;
   background-color: $color-white;
+  border-radius: $border-radi $border-radi $border-radi $border-radi;
 }
 .form-header {
   background-color: $color-blue;
   padding: 30px;
 
-  border-radius: 5px 5px 0px 0px;
+  color: $color-white;
+
+  border-radius: $border-radi $border-radi 0px 0px;
 }
 .form-input-body {
   padding: 30px;
