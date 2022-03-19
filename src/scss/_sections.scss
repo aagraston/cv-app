@@ -14,6 +14,10 @@ body {
   padding: 30px;
   background-color: rgba($color: $color-white, $alpha: 0.86);
   border-radius: $border-radi $border-radi $border-radi $border-radi;
+
+  .header-container {
+    margin-bottom: 30px;
+  }
 }
 .content-container-div {
   border-radius: $border-radi $border-radi $border-radi $border-radi;

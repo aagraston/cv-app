@@ -12,10 +12,10 @@ module.exports = {
   devtool: 'eval',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'boiler-plate-3.0',
+      title: 'CV App',
       template: './src/html/index.html',
       filename: './html/index.html',
-      inject: true,
+      inject: 'body',
     }),
   ],
   module: {

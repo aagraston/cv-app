@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import GeneralForm from '../components/GeneralForm'
 
 class App extends Component {
   constructor() {
@@ -24,7 +25,12 @@ class App extends Component {
     if (edit) {
       return (
         <div>
-          <div>Currently in edit mode</div>
+          <div className="header-container">
+            <h2>Please Supply your Details</h2>
+          </div>
+          <div className="form-section">
+            <GeneralForm header="General" />
+          </div>
           <form onSubmit={this.onSubmitForms}>
             <button type="submit">Submit</button>
           </form>
