@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import GeneralForm from '../components/GeneralForm'
+import InputForm from '../components/InputForm'
 
 class App extends Component {
   constructor() {
@@ -29,10 +29,15 @@ class App extends Component {
             <h2>Please Supply your Details</h2>
           </div>
           <div className="form-section">
-            <GeneralForm header="General" />
+            <InputForm
+              header="General"
+              inputFields={['name', 'email', 'phonenumber']}
+            />
           </div>
           <form onSubmit={this.onSubmitForms}>
-            <button type="submit">Submit</button>
+            <div className="buttons-container-div">
+              <button type="submit">Submit</button>
+            </div>
           </form>
         </div>
       )
